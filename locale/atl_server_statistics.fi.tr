@@ -1,0 +1,6 @@
+# textdomain: atl_server_statistics
+-!- Reset request has expired.=-!- Nollauspyyntö on vanhentunut.
+-!- Your statistics have been reset.=-!- Tilastosi on nollattu.
+-!- No statistics available for @1=-!- Tilastotietoja ei ole saatavilla yritykselle @1
+-!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- Vahvistaaksesi tilastojesi nollauksen, kirjoita /yes_reset seuraavien 30 sekunnin kuluessa.
+-!- Reset request has expired or does not exist.=-!- Nollauspyyntö on vanhentunut tai sitä ei ole olemassa.

@@ -1,0 +1,6 @@
+# textdomain: atl_server_statistics
+-!- Reset request has expired.=-!- Запит на скидання застарів.
+-!- Your statistics have been reset.=-!- Ваша статистика була скинута.
+-!- No statistics available for @1=-!- Немає статистики для @1
+-!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- Щоб підтвердити скидання статистики, введіть /yes_reset протягом наступних 30 секунд.
+-!- Reset request has expired or does not exist.=-!- Запит на скидання застарів або не існує.

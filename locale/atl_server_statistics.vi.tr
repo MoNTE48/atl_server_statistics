@@ -1,0 +1,6 @@
+# textdomain: atl_server_statistics
+-!- Reset request has expired.=-!- Yêu cầu đặt lại đã hết hạn.
+-!- Your statistics have been reset.=-!- Số liệu thống kê của bạn đã được đặt lại.
+-!- No statistics available for @1=-!- Không có số liệu thống kê cho @1
+-!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- Để xác nhận việc đặt lại số liệu thống kê của bạn, hãy nhập /yes_reset trong vòng 30 giây tiếp theo.
+-!- Reset request has expired or does not exist.=-!- Yêu cầu đặt lại đã hết hạn hoặc không tồn tại.

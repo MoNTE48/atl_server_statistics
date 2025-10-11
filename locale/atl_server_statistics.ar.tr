@@ -1,0 +1,6 @@
+# textdomain: atl_server_statistics
+-!- Reset request has expired.=-!- انتهت صلاحية طلب إعادة التعيين.
+-!- Your statistics have been reset.=-!- تمت إعادة تعيين إحصائياتك.
+-!- No statistics available for @1=-!- لا توجد إحصائيات متاحة لـ @1
+-!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- لتأكيد إعادة تعيين الإحصائيات الخاصة بك، اكتب /نعم_إعادة تعيين خلال الـ 30 ثانية التالية.
+-!- Reset request has expired or does not exist.=-!- انتهت صلاحية طلب إعادة التعيين أو غير موجود.

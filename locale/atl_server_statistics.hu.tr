@@ -1,0 +1,6 @@
+# textdomain: atl_server_statistics
+-!- Reset request has expired.=-!- A visszaállítási kérelem lejárt.
+-!- Your statistics have been reset.=-!- A statisztikái visszaálltak.
+-!- No statistics available for @1=-!- Nincsenek elérhető statisztikák a @1 esetében
+-!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- A statisztikák visszaállításának megerősítéséhez írja be a /yes_reset parancsot a következő 30 másodpercen belül.
+-!- Reset request has expired or does not exist.=-!- A visszaállítási kérelem lejárt vagy nem létezik.

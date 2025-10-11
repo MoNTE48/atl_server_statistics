@@ -1,0 +1,6 @@
+# textdomain: atl_server_statistics
+-!- Reset request has expired.=-重置请求已过期。
+-!- Your statistics have been reset.=-您的统计数据已重置。
+-!- No statistics available for @1=-没有 @1 的统计数据
+-!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-要确认重置统计数据，请在接下来的 30 秒内键入 /yes_reset。
+-!- Reset request has expired or does not exist.=-重置请求已过期或不存在。

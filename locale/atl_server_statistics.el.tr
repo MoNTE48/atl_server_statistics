@@ -1,0 +1,6 @@
+# textdomain: atl_server_statistics
+-!- Reset request has expired.=-!- Η αίτηση επαναφοράς έχει λήξει.
+-!- Your statistics have been reset.=-!- Τα στατιστικά σας έχουν μηδενιστεί.
+-!- No statistics available for @1=-!- Δεν υπάρχουν διαθέσιμα στατιστικά στοιχεία για το @1
+-!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- Για να επιβεβαιώσετε την επαναφορά των στατιστικών σας, πληκτρολογήστε /yes_reset μέσα στα επόμενα 30 δευτερόλεπτα.
+-!- Reset request has expired or does not exist.=-!- Η αίτηση επαναφοράς έχει λήξει ή δεν υπάρχει.

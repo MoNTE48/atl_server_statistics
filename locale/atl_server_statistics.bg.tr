@@ -1,0 +1,6 @@
+# textdomain: atl_server_statistics
+-!- Reset request has expired.=-!- Заявката за нулиране е изтекла.
+-!- Your statistics have been reset.=-!- Статистиката ви е нулирана.
+-!- No statistics available for @1=-!- Няма налични статистически данни за @1
+-!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- За да потвърдите нулирането на статистиката си, въведете /yes_reset в рамките на следващите 30 секунди.
+-!- Reset request has expired or does not exist.=-!- Заявката за нулиране е изтекла или не съществува.

@@ -1,0 +1,6 @@
+# textdomain: atl_server_statistics
+-!- Reset request has expired.=-!- Permintaan pengaturan ulang telah berakhir.
+-!- Your statistics have been reset.=-!- Statistik Anda telah direset.
+-!- No statistics available for @1=-!- Tidak ada statistik yang tersedia untuk @1
+-!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- Untuk mengonfirmasi pengaturan ulang statistik Anda, ketik /yes_reset dalam 30 detik berikutnya.
+-!- Reset request has expired or does not exist.=-!- Permintaan pengaturan ulang telah berakhir atau tidak ada.

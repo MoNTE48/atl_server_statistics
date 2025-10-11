@@ -1,0 +1,6 @@
+# textdomain: atl_server_statistics
+-!- Reset request has expired.=リセットリクエストの有効期限が切れました。
+-!- Your statistics have been reset.=-!- 統計情報がリセットされました。
+-!- No statistics available for @1=-!- @1の統計はありません
+-!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- 統計のリセットを確定するには、30秒以内に「/yes_reset」と入力してください。
+-!- Reset request has expired or does not exist.=-!- リセットリクエストの有効期限が切れているか、存在しません。

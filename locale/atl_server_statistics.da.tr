@@ -1,0 +1,6 @@
+# textdomain: atl_server_statistics
+-!- Reset request has expired.=-!- Reset-anmodningen er udløbet.
+-!- Your statistics have been reset.=-!- Dine statistikker er blevet nulstillet.
+-!- No statistics available for @1=-Ingen statistik tilgængelig for @1
+-!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- For at bekræfte nulstillingen af dine statistikker skal du skrive /yes_reset inden for de næste 30 sekunder.
+-!- Reset request has expired or does not exist.=-!- Reset-anmodningen er udløbet eller findes ikke.

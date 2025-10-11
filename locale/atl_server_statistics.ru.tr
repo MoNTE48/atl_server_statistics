@@ -1,5 +1,4 @@
-# textdomain:atl_server_statistics
-
+# textdomain: atl_server_statistics
 -!- Reset request has expired.=-!- Запрос на сброс истек.
 -!- Your statistics have been reset.=-!- Ваши статистические данные были сброшены.
 -!- No statistics available for @1=-!- Нет доступной статистики для @1

@@ -1,0 +1,6 @@
+# textdomain: atl_server_statistics
+-!- Reset request has expired.=-!- Cererea de resetare a expirat.
+-!- Your statistics have been reset.=-!- Statisticile dvs. au fost resetate.
+-!- No statistics available for @1=-!- Nu există statistici disponibile pentru @1
+-!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- Pentru a confirma resetarea statisticilor dvs., tastați /yes_reset în următoarele 30 de secunde.
+-!- Reset request has expired or does not exist.=-!- Cererea de resetare a expirat sau nu există.

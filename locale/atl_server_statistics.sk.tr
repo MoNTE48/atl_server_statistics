@@ -1,0 +1,6 @@
+# textdomain: atl_server_statistics
+-!- Reset request has expired.=-!- Vypršala požiadavka na resetovanie.
+-!- Your statistics have been reset.=-!- Vaše štatistiky boli vynulované.
+-!- No statistics available for @1=-!- Pre @1 nie sú k dispozícii žiadne štatistiky
+-!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- Ak chcete potvrdiť resetovanie štatistík, zadajte počas nasledujúcich 30 sekúnd príkaz /yes_reset.
+-!- Reset request has expired or does not exist.=-!- Platnosť požiadavky na resetovanie vypršala alebo neexistuje.
