@@ -1,4 +1,4 @@
-local function register_event(event_name, register_func, setting_key, default_value)
+local function register_event(_, register_func, setting_key, default_value) -- event_name
 	if not minetest.settings:get_bool("atl_server_statistics." .. setting_key, default_value) then
 		register_func()
 	end
@@ -61,14 +61,14 @@ minetest.register_on_joinplayer(atl_server_statistics.on_player_join)
 minetest.register_on_leaveplayer(atl_server_statistics.on_player_leave)
 minetest.register_on_shutdown(atl_server_statistics.on_shutdown)
 
-minetest.register_on_player_receive_fields(function(player, formname, fields)
+minetest.register_on_player_receive_fields(function(player, _, fields)
 	if fields.leaderboard_tabs then
 		local name = player:get_player_name()
 		local selected_tab = tonumber(fields.leaderboard_tabs)
 		local stats_list = atl_server_statistics.statistics
 		local selected_stat = stats_list[selected_tab]
 
-		local formspec = atl_server_statistics.create_base_formspec(stats_list, selected_tab, name)
+		local formspec = atl_server_statistics.create_base_formspec(selected_tab)
 		formspec = formspec .. atl_server_statistics.generate_stats_table(selected_stat, name)
 
 		minetest.show_formspec(name, "leaderboard:form", formspec)

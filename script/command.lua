@@ -1,4 +1,4 @@
-local S = minetest.get_translator("atl_server_statistics")
+local S = atl_server_statistics.S
 
 minetest.register_chatcommand("stats", {
 	description = S("Allows you to display your current statistics or those of a target player"),
@@ -6,12 +6,13 @@ minetest.register_chatcommand("stats", {
 	func = function(player_name, param)
 		local target_player_name = param ~= "" and param or player_name
 		if not atl_server_statistics.player_has_stats(target_player_name) then
-			return minetest.chat_send_player(player_name, minetest.colorize(atl_server_statistics.color_message, S("-!- No statistics available for @1", target_player_name)))
+			return minetest.chat_send_player(player_name,
+				minetest.colorize(atl_server_statistics.color_message, S("-!- No statistics available for @1.", target_player_name)))
 		end
 		if atl_server_statistics.is_player_online(target_player_name) then
 			atl_server_statistics.update_playtime_on_stats(target_player_name)
 		end
-		local stats_message = S("-!- Statistics of ") .. target_player_name .. " <> "
+		local stats_message = S("-!- Statistics of @1:", target_player_name) .. " "
 		for _, stat in ipairs(atl_server_statistics.statistics) do
 			local value = atl_server_statistics.get_value(target_player_name, stat)
 			if value > 0 then
@@ -33,11 +34,14 @@ minetest.register_chatcommand("reset", {
 				atl_server_statistics.reset_requests[player_name] = nil
 			else
 				atl_server_statistics.reset_requests[player_name] = current_time
-				return minetest.chat_send_player(player_name, minetest.colorize(atl_server_statistics.reset_color_message, S("-!- Statistics reset request has expired. Please try again.")))
+				return minetest.chat_send_player(player_name,
+					minetest.colorize(atl_server_statistics.reset_color_message, S("-!- Statistics reset request has expired. Please try again.")))
 			end
 		else
 			atl_server_statistics.reset_requests[player_name] = current_time
-			minetest.chat_send_player(player_name, minetest.colorize(atl_server_statistics.reset_color_message, S("-!- To confirm the reset of your statistics, type /reset again within the next ") .. atl_server_statistics.time_before_end_request .. S(" seconds.")))
+			minetest.chat_send_player(player_name,
+				minetest.colorize(atl_server_statistics.reset_color_message,
+					S("-!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.", atl_server_statistics.time_before_end_request)))
 		end
 	end,
 })
@@ -45,9 +49,8 @@ minetest.register_chatcommand("reset", {
 minetest.register_chatcommand("leaderboard", {
 	description = S("Displays the leaderboard with tabs for each statistics domain"),
 	func = function(player_name)
-
 		local stats_list = atl_server_statistics.statistics
-		local formspec = atl_server_statistics.create_base_formspec(stats_list, 1, player_name)
+		local formspec = atl_server_statistics.create_base_formspec(1)
 		formspec = formspec .. atl_server_statistics.generate_stats_table(stats_list[1], player_name)
 		minetest.show_formspec(player_name, "leaderboard:form", formspec)
 
@@ -57,7 +60,8 @@ minetest.register_chatcommand("leaderboard", {
 	end,
 })
 
-if minetest.settings:get_bool("atl_server_statistics.simplified_command") ~= true then
+-- ToDo: make it better
+--[[if minetest.settings:get_bool("atl_server_statistics.simplified_command") ~= true then
 	minetest.register_chatcommand("s", minetest.registered_chatcommands["stats"])
 	minetest.register_chatcommand("ld", minetest.registered_chatcommands["leaderboard"])
-end
+end]]

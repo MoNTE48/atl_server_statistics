@@ -1,3 +1,5 @@
+local S = atl_server_statistics.S
+
 function atl_server_statistics.generate_stats_table(stats_name, player_name)
 	local players_stats = {}
 	local mod_storage = atl_server_statistics.mod_storage
@@ -66,14 +68,25 @@ function atl_server_statistics.generate_stats_table(stats_name, player_name)
 	return result_lines
 end
 
-function atl_server_statistics.create_base_formspec(stats_list, selected_tab, player_name)
+local base_tabs = table.concat({
+	S("Messages"),
+	S("Deaths"),
+	S("Kills"),
+	S("Mined"),
+	S("Placed"),
+	S("Craft"),
+	S("Playtime")
+}, ",")
+
+function atl_server_statistics.create_base_formspec(selected_tab)
 	local formspec = "size[6,8]" ..
-					 "tabheader[0,0;leaderboard_tabs;Messages, Deaths, Kills, Mined, Placed, Craft, Playtime;" .. selected_tab .. ";true;false]" ..
-					 "label[0.25,0;Rank]" ..
-					 "label[1.75,0;Player Name]" ..
-					 "label[4.5,0;Stats]" ..
-					 "label[0,7.25;Your Rank]" ..
-					 "label[1.5,7.25;Your Player Name]" ..
-					 "label[4.25,7.25;Your Stats]"
+		"tabheader[0,0;leaderboard_tabs;" .. base_tabs .. ";" .. selected_tab .. ";true;false]" ..
+		"label[0.25,0;" .. S("Rank:") .. "]" ..
+		"label[1.75,0;" .. S("Player Name:") .. "]" ..
+		"label[4.5,0;" .. S("Stats:") .. "]" ..
+		"label[0,7.25;" .. S("Your Rank:") .. "]" ..
+		"label[1.5,7.25;" .. S("Your Name:") .. "]" ..
+		"label[4.25,7.25;" .. S("Your Stats:") .. "]"
+
 	return formspec
 end
