@@ -69,13 +69,13 @@ function atl_server_statistics.generate_stats_table(stats_name, player_name)
 end
 
 local base_tabs = table.concat({
-	S("Messages"),
-	S("Deaths"),
-	S("Kills"),
+--	S("Messages"),
+	S("Playtime"),
 	S("Mined"),
 	S("Placed"),
 	S("Craft"),
-	S("Playtime")
+	S("Deaths"),
+	S("Kills"),
 }, ",")
 
 function atl_server_statistics.create_base_formspec(selected_tab)
