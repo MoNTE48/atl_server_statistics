@@ -1,6 +1,21 @@
 # textdomain: atl_server_statistics
--!- Reset request has expired.=-!- Yêu cầu đặt lại đã hết hạn.
+-!- No statistics available for @1.=-!- Không có số liệu thống kê cho @1.
+-!- Statistics of @1:=-!- Thống kê của @1:
 -!- Your statistics have been reset.=-!- Số liệu thống kê của bạn đã được đặt lại.
--!- No statistics available for @1=-!- Không có số liệu thống kê cho @1
--!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- Để xác nhận việc đặt lại số liệu thống kê của bạn, hãy nhập /yes_reset trong vòng 30 giây tiếp theo.
--!- Reset request has expired or does not exist.=-!- Yêu cầu đặt lại đã hết hạn hoặc không tồn tại.
+-!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- Để xác nhận việc đặt lại số liệu thống kê của bạn, hãy nhập lại /reset trong vòng @1 giây tiếp theo.
+-!- Statistics reset request has expired. Please try again.=-!- Yêu cầu thiết lập lại thống kê đã hết hạn. Vui lòng thử lại.
+
+Messages=Tin nhắn
+Deaths=Tử vong
+Kills=Giết chết
+Mined=Đã khai thác
+Placed=Đã đặt
+Craft=Thủ công
+Playtime=Giờ chơi
+
+Rank:=Thứ hạng:
+Player Name:=Tên người chơi:
+Stats:=Thống kê:
+Your Rank:=Thứ hạng của bạn:
+Your Name:=Tên của bạn:
+Your Stats:=Số liệu thống kê của bạn:

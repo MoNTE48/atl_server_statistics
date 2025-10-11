@@ -1,6 +1,21 @@
 # textdomain: atl_server_statistics
--!- Reset request has expired.=-!- انتهت صلاحية طلب إعادة التعيين.
+-!- No statistics available for @1.=-!- لا توجد إحصائيات متاحة لـ @1.
+-!- Statistics of @1:=-!- إحصائيات @1:
 -!- Your statistics have been reset.=-!- تمت إعادة تعيين إحصائياتك.
--!- No statistics available for @1=-!- لا توجد إحصائيات متاحة لـ @1
--!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- لتأكيد إعادة تعيين الإحصائيات الخاصة بك، اكتب /نعم_إعادة تعيين خلال الـ 30 ثانية التالية.
--!- Reset request has expired or does not exist.=-!- انتهت صلاحية طلب إعادة التعيين أو غير موجود.
+-!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- لتأكيد إعادة تعيين الإحصائيات الخاصة بك، اكتب /إعادة تعيين مرة أخرى خلال الثواني الـ @1 التالية.
+-!- Statistics reset request has expired. Please try again.=-!- انتهت صلاحية طلب إعادة تعيين الإحصائيات. يرجى المحاولة مرة أخرى.
+
+Messages=الرسائل
+Deaths=الوفيات
+Kills=القتل
+Mined=ملغومة
+Placed=وضع
+Craft=الحرف اليدوية
+Playtime=وقت اللعب
+
+Rank:=الرتبة:
+Player Name:=اسم اللاعب
+Stats:=الإحصائيات:
+Your Rank:=رتبتك
+Your Name:=اسمك
+Your Stats:=إحصائياتك

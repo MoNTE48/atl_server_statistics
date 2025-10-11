@@ -1,6 +1,21 @@
 # textdomain: atl_server_statistics
--!- Reset request has expired.=-!- Заявката за нулиране е изтекла.
+-!- No statistics available for @1.=-!- Няма налични статистически данни за @1.
+-!- Statistics of @1:=-!- Статистика на @1:
 -!- Your statistics have been reset.=-!- Статистиката ви е нулирана.
--!- No statistics available for @1=-!- Няма налични статистически данни за @1
--!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- За да потвърдите нулирането на статистиката си, въведете /yes_reset в рамките на следващите 30 секунди.
--!- Reset request has expired or does not exist.=-!- Заявката за нулиране е изтекла или не съществува.
+-!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- За да потвърдите нулирането на статистиката си, въведете отново /reset в рамките на следващите @1 секунди.
+-!- Statistics reset request has expired. Please try again.=-!- Заявката за нулиране на статистиката е изтекла. Моля, опитайте отново.
+
+Messages=Съобщения
+Deaths=Смъртни случаи
+Kills=Убива
+Mined=Минно дело
+Placed=Поставени
+Craft=Занаяти
+Playtime=Време за игра
+
+Rank:=Ранг:
+Player Name:=Име на играча:
+Stats:=Статистики:
+Your Rank:=Вашият ранг:
+Your Name:=Вашето име:
+Your Stats:=Вашите статистики:

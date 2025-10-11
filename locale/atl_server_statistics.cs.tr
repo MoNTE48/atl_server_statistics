@@ -1,6 +1,21 @@
 # textdomain: atl_server_statistics
--!- Reset request has expired.=-!- Vypršela platnost požadavku na resetování.
+-!- No statistics available for @1.=-!- Pro @1 nejsou k dispozici žádné statistiky.
+-!- Statistics of @1:=-!- Statistiky @1:
 -!- Your statistics have been reset.=-!- Vaše statistiky byly resetovány.
--!- No statistics available for @1=-!- Pro @1 nejsou k dispozici žádné statistiky
--!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- Chcete-li potvrdit resetování statistik, zadejte během následujících 30 sekund příkaz /yes_reset.
--!- Reset request has expired or does not exist.=-!- Platnost požadavku na resetování vypršela nebo neexistuje.
+-!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- Chcete-li potvrdit resetování statistik, zadejte během následujících @1 sekund znovu příkaz /reset.
+-!- Statistics reset request has expired. Please try again.=-!- Vypršel požadavek na obnovení statistik. Zkuste to prosím znovu.
+
+Messages=Zprávy
+Deaths=Úmrtí
+Kills=Zabíjí
+Mined=Těžba
+Placed=Umístění
+Craft=Řemesla
+Playtime=Hrací čas
+
+Rank:=Hodnost:
+Player Name:=Jméno hráče:
+Stats:=Statistiky:
+Your Rank:=Vaše hodnost:
+Your Name:=Vaše jméno:
+Your Stats:=Vaše statistiky:

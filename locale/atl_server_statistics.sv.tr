@@ -1,6 +1,21 @@
 # textdomain: atl_server_statistics
--!- Reset request has expired.=-!- Återställningsbegäran har löpt ut.
+-!- No statistics available for @1.=-Ingen statistik tillgänglig för @1.
+-!- Statistics of @1:=-!- Statistik över @1:
 -!- Your statistics have been reset.=-!- Din statistik har återställts.
--!- No statistics available for @1=-Ingen statistik tillgänglig för @1
--!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- För att bekräfta återställningen av statistiken skriver du /yes_reset inom de närmaste 30 sekunderna.
--!- Reset request has expired or does not exist.=-!- Reset-begäran har löpt ut eller finns inte.
+-!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- För att bekräfta återställningen av din statistik, skriv /reset igen inom de närmaste @1 sekunderna.
+-!- Statistics reset request has expired. Please try again.=-!- Begäran om återställning av statistik har löpt ut. Vänligen försök igen.
+
+Messages=Meddelanden
+Deaths=Dödsfall
+Kills=Dödar
+Mined=Minerad
+Placed=Placerad
+Craft=Hantverk
+Playtime=Lektid
+
+Rank:=Rang:
+Player Name:=Spelarens namn:
+Stats:=Statistik:
+Your Rank:=Din rang:
+Your Name:=Ditt namn:
+Your Stats:=Din statistik:

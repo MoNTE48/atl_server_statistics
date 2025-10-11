@@ -1,6 +1,21 @@
 # textdomain: atl_server_statistics
--!- Reset request has expired.=-!- Cererea de resetare a expirat.
+-!- No statistics available for @1.=-!- Nu există statistici disponibile pentru @1.
+-!- Statistics of @1:=-!- Statistici ale @1:
 -!- Your statistics have been reset.=-!- Statisticile dvs. au fost resetate.
--!- No statistics available for @1=-!- Nu există statistici disponibile pentru @1
--!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- Pentru a confirma resetarea statisticilor dvs., tastați /yes_reset în următoarele 30 de secunde.
--!- Reset request has expired or does not exist.=-!- Cererea de resetare a expirat sau nu există.
+-!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- Pentru a confirma resetarea statisticilor dvs., tastați /reset din nou în următoarele @1 secunde.
+-!- Statistics reset request has expired. Please try again.=-!- Cererea de resetare a statisticilor a expirat. Vă rugăm să încercați din nou.
+
+Messages=Mesaje
+Deaths=Decese
+Kills=Ucide
+Mined=Minat
+Placed=Plasat
+Craft=Artizanat
+Playtime=Timp de joacă
+
+Rank:=Rang:
+Player Name:=Numele jucătorului:
+Stats:=Statistici:
+Your Rank:=Rangul tău:
+Your Name:=Numele dvs:
+Your Stats:=Statisticile tale:

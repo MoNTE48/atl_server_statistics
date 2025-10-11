@@ -1,6 +1,21 @@
 # textdomain: atl_server_statistics
--!- Reset request has expired.=-!- Sıfırlama isteğinin süresi doldu.
+-!- No statistics available for @1.=-!- @1 için istatistik mevcut değil.
+-!- Statistics of @1:=-!- @1 istatistikleri:
 -!- Your statistics have been reset.=-!- İstatistikleriniz sıfırlandı.
--!- No statistics available for @1=-!- @1 için istatistik mevcut değil
--!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-İstatistiklerinizin sıfırlanmasını onaylamak için, sonraki 30 saniye içinde /yes_reset yazın.
--!- Reset request has expired or does not exist.=-!- Sıfırlama isteğinin süresi doldu veya mevcut değil.
+-!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- İstatistiklerinizin sıfırlandığını onaylamak için, sonraki @1 saniye içinde tekrar /reset yazın.
+-!- Statistics reset request has expired. Please try again.=-!- İstatistik sıfırlama isteğinin süresi doldu. Lütfen tekrar deneyin.
+
+Messages=Mesajlar
+Deaths=Ölümler
+Kills=Öldürür
+Mined=Mayınlı
+Placed=Yerleştirildi
+Craft=Zanaat
+Playtime=Oyun Zamanı
+
+Rank:=Rütbe:
+Player Name:=Oyuncunun adı:
+Stats:=İstatistikler:
+Your Rank:=Senin rütben:
+Your Name:=Senin adın:
+Your Stats:=İstatistiklerin:

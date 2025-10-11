@@ -1,6 +1,21 @@
 # textdomain: atl_server_statistics
--!- Reset request has expired.=-!- A visszaállítási kérelem lejárt.
+-!- No statistics available for @1.=-!- A következőre vonatkozóan nem áll rendelkezésre statisztika: @1.
+-!- Statistics of @1:=-!- A @1 statisztikái:
 -!- Your statistics have been reset.=-!- A statisztikái visszaálltak.
--!- No statistics available for @1=-!- Nincsenek elérhető statisztikák a @1 esetében
--!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- A statisztikák visszaállításának megerősítéséhez írja be a /yes_reset parancsot a következő 30 másodpercen belül.
--!- Reset request has expired or does not exist.=-!- A visszaállítási kérelem lejárt vagy nem létezik.
+-!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- A statisztikák visszaállításának megerősítéséhez írja be újra a /reset parancsot a következő @1 másodpercen belül.
+-!- Statistics reset request has expired. Please try again.=-!- A statisztikák visszaállítása iránti kérelem lejárt. Kérjük, próbálja újra.
+
+Messages=Üzenetek
+Deaths=Halálesetek
+Kills=Megöli a
+Mined=Bányászott
+Placed=Elhelyezve
+Craft=Készítés
+Playtime=Játékidő
+
+Rank:=Rang:
+Player Name:=Játékos neve: Név:
+Stats:=Statisztikák:
+Your Rank:=Az Ön rangja:
+Your Name:=Az Ön neve:
+Your Stats:=A statisztikáid:

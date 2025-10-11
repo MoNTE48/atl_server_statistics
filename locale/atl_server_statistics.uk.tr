@@ -1,6 +1,21 @@
 # textdomain: atl_server_statistics
--!- Reset request has expired.=-!- Запит на скидання застарів.
+-!- No statistics available for @1.=-!- Немає статистики для @1.
+-!- Statistics of @1:=-!- Статистика @1:
 -!- Your statistics have been reset.=-!- Ваша статистика була скинута.
--!- No statistics available for @1=-!- Немає статистики для @1
--!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- Щоб підтвердити скидання статистики, введіть /yes_reset протягом наступних 30 секунд.
--!- Reset request has expired or does not exist.=-!- Запит на скидання застарів або не існує.
+-!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- Щоб підтвердити скидання статистики, введіть /reset знову протягом наступних @1 секунд.
+-!- Statistics reset request has expired. Please try again.=-!- Запит на скидання статистики застарів. Будь ласка, спробуйте ще раз.
+
+Messages=Повідомлення
+Deaths=Смерті
+Kills=Убивства
+Mined=Видобуто
+Placed=Розміщено
+Craft=Ремесло
+Playtime=Час гри
+
+Rank:=Ранг:
+Player Name:=Ім’я гравця:
+Stats:=Статистика:
+Your Rank:=Ваш ранг:
+Your Name:=Ваше ім’я:
+Your Stats:=Ваші статистичні дані:

@@ -1,6 +1,21 @@
 # textdomain: atl_server_statistics
--!- Reset request has expired.=-重置请求已过期。
+-!- No statistics available for @1.=-没有 @1 的统计数据。
+-!- Statistics of @1:=-@1：
 -!- Your statistics have been reset.=-您的统计数据已重置。
--!- No statistics available for @1=-没有 @1 的统计数据
--!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-要确认重置统计数据，请在接下来的 30 秒内键入 /yes_reset。
--!- Reset request has expired or does not exist.=-重置请求已过期或不存在。
+-!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-要确认重置统计数据，请在接下来的 @1 秒内再次键入 /reset。
+-!- Statistics reset request has expired. Please try again.=-统计重置请求已过期。请重试。
+
+Messages=信息
+Deaths=死亡人数
+Kills=击毙
+Mined=已开采
+Placed=已安置
+Craft=工艺
+Playtime=游戏时间
+
+Rank:=级别
+Player Name:=球员姓名
+Stats:=统计
+Your Rank:=您的等级
+Your Name:=您的姓名
+Your Stats:=您的数据

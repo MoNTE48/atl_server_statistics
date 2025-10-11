@@ -1,6 +1,21 @@
 # textdomain: atl_server_statistics
--!- Reset request has expired.=-!- Żądanie resetu wygasło.
+-!- No statistics available for @1.=-!- Brak dostępnych statystyk dla @1.
+-!- Statistics of @1:=-!- Statystyki @1:
 -!- Your statistics have been reset.=-!- Statystyki zostały zresetowane.
--!- No statistics available for @1=-!- Brak dostępnych statystyk dla @1
--!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- Aby potwierdzić zresetowanie statystyk, wpisz /yes_reset w ciągu następnych 30 sekund.
--!- Reset request has expired or does not exist.=-!- Żądanie resetu wygasło lub nie istnieje.
+-!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- Aby potwierdzić zresetowanie statystyk, wpisz /reset ponownie w ciągu następnych @1 sekund.
+-!- Statistics reset request has expired. Please try again.=-!- Żądanie zresetowania statystyk wygasło. Spróbuj ponownie.
+
+Messages=Wiadomości
+Deaths=Zgony
+Kills=Zabójstwa
+Mined=Wydobyty
+Placed=Umieszczony
+Craft=Rzemiosło
+Playtime=Czas zabawy
+
+Rank:=Ranga:
+Player Name:=Nazwa gracza:
+Stats:=Statystyki:
+Your Rank:=Twoja ranga:
+Your Name:=Imię i nazwisko:
+Your Stats:=Twoje statystyki:

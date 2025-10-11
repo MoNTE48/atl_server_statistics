@@ -1,6 +1,21 @@
 # textdomain: atl_server_statistics
--!- Reset request has expired.=-!- คำขอรีเซ็ตหมดอายุแล้ว
+-!- No statistics available for @1.=-!- ไม่มีสถิติสำหรับ @1
+-!- Statistics of @1:=-!- สถิติของ @1:
 -!- Your statistics have been reset.=-!- สถิติของคุณถูกรีเซ็ตแล้ว
--!- No statistics available for @1=-!- ไม่มีสถิติสำหรับ @1
--!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- เพื่อยืนยันการรีเซ็ตสถิติของคุณ ให้พิมพ์ /yes_reset ภายใน 30 วินาทีถัดไป
--!- Reset request has expired or does not exist.=-!- คำขอรีเซ็ตหมดอายุแล้วหรือไม่มีอยู่
+-!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- เพื่อยืนยันการรีเซ็ตสถิติของคุณ ให้พิมพ์ /reset อีกครั้งภายใน @1 วินาทีถัดไป
+-!- Statistics reset request has expired. Please try again.=-!- คำขอรีเซ็ตสถิติหมดอายุแล้ว โปรดลองอีกครั้ง
+
+Messages=ข้อความ
+Deaths=การเสียชีวิต
+Kills=จำนวนครั้งที่ฆ่า
+Mined=ขุดแล้ว
+Placed=วางแล้ว
+Craft=ประดิษฐ์
+Playtime=เวลาเล่น
+
+Rank:=อันดับ:
+Player Name:=ชื่อผู้เล่น:
+Stats:=สถิติ:
+Your Rank:=อันดับของคุณ:
+Your Name:=ชื่อของคุณ:
+Your Stats:=สถิติของคุณ:

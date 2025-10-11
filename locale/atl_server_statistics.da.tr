@@ -1,6 +1,21 @@
 # textdomain: atl_server_statistics
--!- Reset request has expired.=-!- Reset-anmodningen er udløbet.
+-!- No statistics available for @1.=-Ingen statistik tilgængelig for @1.
+-!- Statistics of @1:=-Statistik over @1:
 -!- Your statistics have been reset.=-!- Dine statistikker er blevet nulstillet.
--!- No statistics available for @1=-Ingen statistik tilgængelig for @1
--!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- For at bekræfte nulstillingen af dine statistikker skal du skrive /yes_reset inden for de næste 30 sekunder.
--!- Reset request has expired or does not exist.=-!- Reset-anmodningen er udløbet eller findes ikke.
+-!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- For at bekræfte nulstillingen af dine statistikker skal du skrive /reset igen inden for de næste @1 sekunder.
+-!- Statistics reset request has expired. Please try again.=-Anmodning om nulstilling af statistik er udløbet. Prøv venligst igen.
+
+Messages=Beskeder
+Deaths=Dødsfald
+Kills=Dræber
+Mined=Mineret
+Placed=Placeret
+Craft=Håndværk
+Playtime=Legetid
+
+Rank:=Rang:
+Player Name:=Spillerens navn:
+Stats:=Statistik:
+Your Rank:=Din rang:
+Your Name:=Dit navn:
+Your Stats:=Dine statistikker:

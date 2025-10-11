@@ -1,6 +1,21 @@
 # textdomain: atl_server_statistics
--!- Reset request has expired.=リセットリクエストの有効期限が切れました。
+-!- No statistics available for @1.=-!- @1の統計はありません。
+-!- Statistics of @1:=-!- @1の統計情報：
 -!- Your statistics have been reset.=-!- 統計情報がリセットされました。
--!- No statistics available for @1=-!- @1の統計はありません
--!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- 統計のリセットを確定するには、30秒以内に「/yes_reset」と入力してください。
--!- Reset request has expired or does not exist.=-!- リセットリクエストの有効期限が切れているか、存在しません。
+-!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- 統計のリセットを確定するには、次の@1秒以内に再度「/reset」と入力してください。
+-!- Statistics reset request has expired. Please try again.=-!- 統計リセットのリクエストが期限切れです。もう一度お試しください。
+
+Messages=メッセージ
+Deaths=死亡数
+Kills=キル数
+Mined=採掘済み
+Placed=配置済み
+Craft=クラフト
+Playtime=プレイ時間
+
+Rank:=ランク：
+Player Name:=プレイヤー名：
+Stats:=ステータス：
+Your Rank:=あなたのランク：
+Your Name:=あなたの名前：
+Your Stats:=あなたのステータス：

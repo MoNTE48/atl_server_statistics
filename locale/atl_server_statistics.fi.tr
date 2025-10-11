@@ -1,6 +1,21 @@
 # textdomain: atl_server_statistics
--!- Reset request has expired.=-!- Nollauspyyntö on vanhentunut.
+-!- No statistics available for @1.=-!- Tilastotietoja ei ole saatavilla tuotteelle @1.
+-!- Statistics of @1:=-!- Tilastot @1:
 -!- Your statistics have been reset.=-!- Tilastosi on nollattu.
--!- No statistics available for @1=-!- Tilastotietoja ei ole saatavilla yritykselle @1
--!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- Vahvistaaksesi tilastojesi nollauksen, kirjoita /yes_reset seuraavien 30 sekunnin kuluessa.
--!- Reset request has expired or does not exist.=-!- Nollauspyyntö on vanhentunut tai sitä ei ole olemassa.
+-!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- Vahvistaaksesi tilastojen nollauksen, kirjoita /reset uudelleen seuraavan @1 sekunnin kuluessa.
+-!- Statistics reset request has expired. Please try again.=-!- Tilastojen nollauspyyntö on vanhentunut. Yritä uudelleen.
+
+Messages=Viestit
+Deaths=Kuolemantapaukset
+Kills=Tappaa
+Mined=Louhittu
+Placed=Sijoitettu
+Craft=Käsittele
+Playtime=Leikkiaika
+
+Rank:=Sijoitus:
+Player Name:=Pelaajan nimi:
+Stats:=Tilastot:
+Your Rank:=Sijoituksesi:
+Your Name:=Nimesi:
+Your Stats:=Sinun tilastosi:

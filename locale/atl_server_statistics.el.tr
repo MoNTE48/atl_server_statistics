@@ -1,6 +1,21 @@
 # textdomain: atl_server_statistics
--!- Reset request has expired.=-!- Η αίτηση επαναφοράς έχει λήξει.
+-!- No statistics available for @1.=-!- Δεν υπάρχουν διαθέσιμα στατιστικά στοιχεία για το @1.
+-!- Statistics of @1:=-!- Στατιστικά στοιχεία του @1:
 -!- Your statistics have been reset.=-!- Τα στατιστικά σας έχουν μηδενιστεί.
--!- No statistics available for @1=-!- Δεν υπάρχουν διαθέσιμα στατιστικά στοιχεία για το @1
--!- To confirm the reset of your statistics, type /yes_reset within the next 30 seconds.=-!- Για να επιβεβαιώσετε την επαναφορά των στατιστικών σας, πληκτρολογήστε /yes_reset μέσα στα επόμενα 30 δευτερόλεπτα.
--!- Reset request has expired or does not exist.=-!- Η αίτηση επαναφοράς έχει λήξει ή δεν υπάρχει.
+-!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- Για να επιβεβαιώσετε την επαναφορά των στατιστικών σας, πληκτρολογήστε ξανά /reset μέσα στα επόμενα @1 δευτερόλεπτα.
+-!- Statistics reset request has expired. Please try again.=-!- Η αίτηση επαναφοράς στατιστικών έχει λήξει. Παρακαλώ προσπαθήστε ξανά.
+
+Messages=Μηνύματα
+Deaths=Θάνατοι
+Kills=Σκοτώνει το
+Mined=Εξορύξεις
+Placed=Τοποθετημένο
+Craft=Βιοτεχνία
+Playtime=Χρόνος παιχνιδιού
+
+Rank:=Κατάταξη:
+Player Name:=Όνομα παίκτη:
+Stats:=Στατιστικά:
+Your Rank:=Ο βαθμός σας:
+Your Name:=Το όνομά σας:
+Your Stats:=Τα στατιστικά σας:
