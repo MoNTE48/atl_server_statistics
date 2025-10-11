@@ -1,5 +1,13 @@
 function atl_server_statistics.get_player_name(player)
-	return type(player) == "userdata" and player:get_player_name() or player
+	if type(player) == "string" then
+		return player -- already is name
+	end
+
+	if not player or type(player) ~= "userdata" or not player:is_player() then
+		return ""
+	end
+
+	return player:get_player_name()
 end
 
 function atl_server_statistics.increment_event_stat(player_name, event_key, amount)
