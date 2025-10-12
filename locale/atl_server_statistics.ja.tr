@@ -5,6 +5,10 @@
 -!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- 統計のリセットを確定するには、次の@1秒以内に再度「/reset」と入力してください。
 -!- Statistics reset request has expired. Please try again.=-!- 統計リセットのリクエストが期限切れです。もう一度お試しください。
 
+Allows you to display your current statistics or those of a target player=あなた自身または指定したプレイヤーの現在の統計情報を表示できます
+Allows you to reset your statistics with confirmation=確認の上で、あなたの統計情報をリセットできます
+Displays the leaderboard with tabs for each statistics domain=各統計分野のタブ付きでリーダーボードを表示します
+
 Messages=メッセージ
 Deaths=死亡数
 Kills=キル数
