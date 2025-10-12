@@ -4,9 +4,12 @@
 -!- Your statistics have been reset.=-!- 統計情報がリセットされました。
 -!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- 統計のリセットを確定するには、次の@1秒以内に再度「/reset」と入力してください。
 -!- Statistics reset request has expired. Please try again.=-!- 統計リセットのリクエストが期限切れです。もう一度お試しください。
+-!- You do not have permission to reset other players' statistics.=-!- 他のプレイヤーの統計をリセットする権限がありません。
+-!- Statistic @1 for @2 has been reset.=-!- @2 の @1 がリセットされました。
+-!- To confirm resetting @1 for @2, type /reset @3 again within the next @4 seconds.=-!- @1（対象: @2）をリセットするには、「/reset @3」を次の @4 秒以内に再入力してください。
 
 Allows you to display your current statistics or those of a target player=あなた自身または指定したプレイヤーの現在の統計情報を表示できます
-Allows you to reset your statistics with confirmation=確認の上で、あなたの統計情報をリセットできます
+Allows you to reset your statistics or specific stats of others after confirmation=確認の上で、あなたの統計または他のプレイヤーの個別統計をリセットできます
 Displays the leaderboard with tabs for each statistics domain=各統計分野のタブ付きでリーダーボードを表示します
 
 Messages=メッセージ
@@ -16,6 +19,8 @@ Mined=採掘数
 Placed=設置数
 Craft=クラフト数
 Playtime=プレイ時間
+
+Statistics:=統計：
 
 Rank:=順位：
 Player Name:=プレイヤー名：
