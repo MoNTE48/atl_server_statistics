@@ -8,14 +8,14 @@
 Messages=メッセージ
 Deaths=死亡数
 Kills=キル数
-Mined=採掘済み
-Placed=配置済み
-Craft=クラフト
+Mined=採掘数
+Placed=設置数
+Craft=クラフト数
 Playtime=プレイ時間
 
-Rank:=ランク：
+Rank:=順位：
 Player Name:=プレイヤー名：
 Stats:=ステータス：
-Your Rank:=あなたのランク：
+Your Rank:=あなたの順位：
 Your Name:=あなたの名前：
 Your Stats:=あなたのステータス：
