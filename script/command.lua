@@ -150,7 +150,7 @@ minetest.register_chatcommand("reset", {
 		if type(request_entry) == "table" and request_entry.type == "self" then
 			if current_time - request_entry.timestamp <= atl_server_statistics.time_before_end_request then
 				atl_server_statistics.reset_player_stats(player_name)
-				send_reset_message(player_name, S("-!- Your statistics have been reset."), false)
+				send_reset_message(player_name, S("-!- Your statistics have been reset."), true)
 				atl_server_statistics.reset_requests[player_name] = nil
 			else
 						atl_server_statistics.reset_requests[player_name] = {type = "self", timestamp = current_time}
