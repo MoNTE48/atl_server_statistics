@@ -68,7 +68,7 @@ minetest.register_on_player_receive_fields(function(player, _, fields)
 		local stats_list = atl_server_statistics.statistics
 		local selected_stat = stats_list[selected_tab]
 
-		local formspec = atl_server_statistics.create_base_formspec(selected_tab)
+		local formspec = atl_server_statistics.create_base_formspec(selected_tab, player)
 		formspec = formspec .. atl_server_statistics.generate_stats_table(selected_stat, name)
 
 		minetest.show_formspec(name, "leaderboard:form", formspec)
