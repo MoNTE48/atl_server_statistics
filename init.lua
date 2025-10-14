@@ -1,9 +1,7 @@
 atl_server_statistics = {
 	S = minetest.get_translator("atl_server_statistics"),
 	mod_storage = minetest.get_mod_storage(),
-	statistics = {"PlayTime", "Nodes Dug", "Nodes Placed", "Items Crafted",
-		"Deaths Count", "Kills Count",
-	}, -- "Messages Count",
+	statistics = {"Messages Count", "Deaths Count", "Kills Count", "Nodes Dug", "Nodes Placed", "Items Crafted", "PlayTime"},
 	color_message = "",
 	reset_color_message = "#bce712",
 	time_before_end_request = 30,
