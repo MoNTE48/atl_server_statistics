@@ -5,6 +5,7 @@ globals = {
 }
 
 read_globals = {
+	"inv_themes",
 	"minetest",
 	"utf8",
 	string = {fields = {"buffer", "split", "trim"}},
