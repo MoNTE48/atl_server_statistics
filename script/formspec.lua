@@ -1,5 +1,23 @@
 local S = atl_server_statistics.S
 
+local function generate_row(rank, y, row_color, stats_name, player_stat)
+	local formatted_value
+
+	if stats_name == "PlayTime" then
+		formatted_value = atl_server_statistics.format_playtime(player_stat.value)
+	else
+		formatted_value = tostring(player_stat.value)
+	end
+
+	return
+		"box[0.3," .. y .. ";11.15,0.6;" .. row_color .. "]" ..
+		"box[9," .. y .. ";2.45,0.6;#6dafb7]" ..
+		"box[0.3," .. y .. ";0.7,0.6;#4a606c]" ..
+		"label[0.4," .. y + 0.3 .. ";" .. rank .. "]" ..
+		"label[2.6," .. y + 0.3 .. ";" .. player_stat.name .. "]" ..
+		"label[9.1," .. y + 0.3 .. ";" .. formatted_value .. "]"
+end
+
 function atl_server_statistics.generate_stats_table(stats_name, player_name)
 	local players_stats = {}
 	local mod_storage = atl_server_statistics.mod_storage
@@ -27,66 +45,51 @@ function atl_server_statistics.generate_stats_table(stats_name, player_name)
 			player_rank = i
 			player_stat_in_list = player_stat
 		end
+
 		if i <= 10 then
 			local row_color = i == 1 and "#363d4b" or "#434c5e"
-			local formatted_value
-
-			if stats_name == "PlayTime" then
-				formatted_value = atl_server_statistics.format_playtime(player_stat.value)
-			else
-				formatted_value = tostring(player_stat.value)
-			end
-
+			local y = 1.8 + (i - 1) * 0.775
 			result_lines = result_lines ..
-				"box[0," .. (i - 0.1) * 0.65 .. ";5.75,0.5;" .. row_color .. "]" ..
-				"box[4.25," .. (i - 0.1) * 0.65 .. ";1.5,0.5;#6dafb7]" ..
-				"box[0," .. (i - 0.1) * 0.65 .. ";0.55,0.5;#4a606c]" ..
-				"label[0.225," .. (i - 0.08) * 0.65 .. ";" .. i .. "]" ..
-				"label[1.75," .. (i - 0.08) * 0.65 .. ";" .. player_stat.name .. "]" ..
-				"label[4.45," .. (i - 0.08) * 0.65 .. ";" .. formatted_value .. "]"
+				generate_row(i, y, row_color, stats_name, player_stat)
 		end
 	end
 
 	if player_stat_in_list then
-		local row_color = "#434c5e"
-		local formatted_value
-
-		if stats_name == "PlayTime" then
-			formatted_value = atl_server_statistics.format_playtime(player_stat_in_list.value)
-		else
-			formatted_value = tostring(player_stat_in_list.value)
-		end
-
 		result_lines = result_lines ..
-			"box[4.25,7.75;1.5,0.5;#6dafb7]" ..
-			"box[0,7.75;0.85,0.5;#4a606c]" ..
-			"box[0,7.75;4.25,0.5;" .. row_color .. "]" ..
-			"label[0.225,7.75;" .. player_rank .. "]" ..
-			"label[1.75,7.75;" .. player_stat_in_list.name .. "]" ..
-			"label[4.45,7.75;" .. formatted_value .. "]"
+			generate_row(player_rank, 10.1, "#434c5e", stats_name, player_stat_in_list)
 	end
 	return result_lines
 end
 
 local base_tabs = table.concat({
---	S("Messages"),
-	S("Playtime"),
+	S("Messages"),
+	S("Deaths"),
+	S("Kills"),
 	S("Mined"),
 	S("Placed"),
 	S("Craft"),
-	S("Deaths"),
-	S("Kills"),
+	S("Playtime")
 }, ",")
 
-function atl_server_statistics.create_base_formspec(selected_tab)
-	local formspec = "size[6,8]" ..
-		"tabheader[0,0;leaderboard_tabs;" .. base_tabs .. ";" .. selected_tab .. ";true;false]" ..
-		"label[0.25,0;" .. S("Rank:") .. "]" ..
-		"label[1.75,0;" .. S("Player Name:") .. "]" ..
-		"label[4.5,0;" .. S("Stats:") .. "]" ..
-		"label[0,7.25;" .. S("Your Rank:") .. "]" ..
-		"label[1.5,7.25;" .. S("Your Name:") .. "]" ..
-		"label[4.25,7.25;" .. S("Your Stats:") .. "]"
+function atl_server_statistics.create_base_formspec(selected_tab, player)
+	local formspec = "formspec_version[4]size[11.75,11]" ..
+		"tabheader[0.3,1.1;10.25,0.8;leaderboard_tabs;" .. base_tabs .. ";" .. selected_tab .. ";true;true]"
+
+	if minetest.global_exists("inv_themes") then
+		local theme = inv_themes.get_theme(player)
+		formspec = formspec .. theme:close_btn()
+	else
+		formspec = formspec ..
+			"image_button_exit[10.75,0.3;0.7,0.7;close.png;exit;;true;false;close_pressed.png]"
+	end
+
+	formspec = formspec ..
+		"label[0.3,1.5;" .. S("Rank:") .. "]" ..
+		"label[2.5,1.5;" .. S("Player Name:") .. "]" ..
+		"label[9,1.5;" .. S("Stats:") .. "]" ..
+		"label[0.3,9.8;" .. S("Your Rank:") .. "]" ..
+		"label[2.5,9.8;" .. S("Your Name:") .. "]" ..
+		"label[9,9.8;" .. S("Your Stats:") .. "]"
 
 	return formspec
 end

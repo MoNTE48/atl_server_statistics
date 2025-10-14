@@ -170,7 +170,8 @@ minetest.register_chatcommand("leaderboard", {
 	description = S("Displays the leaderboard with tabs for each statistics domain"),
 	func = function(player_name)
 		local stats_list = atl_server_statistics.statistics
-		local formspec = atl_server_statistics.create_base_formspec(1)
+		local player = minetest.get_player_by_name(player_name)
+		local formspec = atl_server_statistics.create_base_formspec(1, player)
 		formspec = formspec .. atl_server_statistics.generate_stats_table(stats_list[1], player_name)
 		minetest.show_formspec(player_name, "leaderboard:form", formspec)
 

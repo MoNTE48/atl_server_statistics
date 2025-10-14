@@ -33,8 +33,11 @@ register_event("Nodes Dug", function()
 end, "register_on_dignode", false)
 
 register_event("Messages Count", function()
-	minetest.register_on_chat_message(function(player_name)
-		atl_server_statistics.increment_event_stat(player_name, "Messages Count", 1)
+	-- Add our callback first so that it runs even if another mod overrides chat
+	table.insert(minetest.registered_on_chat_messages, 1, function(player_name, msg)
+		if msg:sub(1, 1) ~= "/" then
+			atl_server_statistics.increment_event_stat(player_name, "Messages Count", 1)
+		end
 	end)
 end, "register_on_chat_message", false)
 
@@ -68,7 +71,7 @@ minetest.register_on_player_receive_fields(function(player, _, fields)
 		local stats_list = atl_server_statistics.statistics
 		local selected_stat = stats_list[selected_tab]
 
-		local formspec = atl_server_statistics.create_base_formspec(selected_tab)
+		local formspec = atl_server_statistics.create_base_formspec(selected_tab, player)
 		formspec = formspec .. atl_server_statistics.generate_stats_table(selected_stat, name)
 
 		minetest.show_formspec(name, "leaderboard:form", formspec)
