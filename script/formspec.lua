@@ -62,13 +62,13 @@ function atl_server_statistics.generate_stats_table(stats_name, player_name)
 end
 
 local base_tabs = table.concat({
-	S("Messages"),
-	S("Deaths"),
-	S("Kills"),
 	S("Mined"),
 	S("Placed"),
 	S("Craft"),
-	S("Playtime")
+	S("Deaths"),
+	S("Kills"),
+	S("Messages"),
+	S("Playtime"),
 }, ",")
 
 function atl_server_statistics.create_base_formspec(selected_tab, player)
@@ -87,9 +87,9 @@ function atl_server_statistics.create_base_formspec(selected_tab, player)
 		"label[0.3,1.5;" .. S("Rank:") .. "]" ..
 		"label[2.5,1.5;" .. S("Player Name:") .. "]" ..
 		"label[9,1.5;" .. S("Stats:") .. "]" ..
-		"label[0.3,9.8;" .. S("Your Rank:") .. "]" ..
-		"label[2.5,9.8;" .. S("Your Name:") .. "]" ..
-		"label[9,9.8;" .. S("Your Stats:") .. "]"
+		"label[0.3,9.8;" .. S("Your Rank:") .. "]" --..
+	--	"label[2.5,9.8;" .. S("Your Name:") .. "]" ..
+	--	"label[9,9.8;" .. S("Your Stats:") .. "]"
 
 	return formspec
 end
