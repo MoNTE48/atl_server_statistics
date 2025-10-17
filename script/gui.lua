@@ -20,11 +20,11 @@ local function generate_row(rank, row_color, stats_name, player_stat)
 		gui.Stack{
 			min_w = rank_w,
 			bgcolor = "#6dafb7",
-			gui.Label{label = rank, padding = 0.1},
+			gui.Label{label = tostring(rank), padding = 0.1},
 		},
 		gui.Spacer{w = rank_right_margin, expand = false},
 		gui.Label{
-			label = player_stat.name, padding = 0.1,
+			label = player_stat.name, padding = 0.1, w = 3,
 			expand = true, align_h = "left",
 		},
 		gui.Stack{
@@ -57,7 +57,11 @@ local function generate_stats_table(stats_name, player_name)
 	local player_rank = nil
 	local player_stat_in_list = nil
 
-	local rows = {expand = true}
+	local rows = {
+		name = "rows", expand = true,
+		spacing = 0.175,
+		custom_scrollbar = {w = 0.9},
+	}
 
 	for i = 1, #players_stats do
 		local player_stat = players_stats[i]
@@ -66,36 +70,49 @@ local function generate_stats_table(stats_name, player_name)
 			player_stat_in_list = player_stat
 		end
 
-		if i <= 10 then
+		if i <= 100 then
 			local row_color = i == 1 and "#363d4b" or "#434c5e"
 			rows[#rows + 1] = generate_row(i, row_color, stats_name, player_stat)
 		end
 	end
 
-	local vbox = {
-		expand = true,
+	local scroll = #rows > 10
+	local stats_list = gui.VBox{
+		spacing = 0.1, expand = true,
 		gui.HBox{
 			spacing = 0,
 			gui.Label{label = S("Rank:"), w = rank_w},
 			gui.Spacer{w = rank_right_margin, expand = false},
 			gui.Label{label = S("Player Name:"), expand = true, align_h = "left"},
 			gui.Label{label = S("Stats:"), w = value_w},
+			scroll and gui.Spacer{w = 1.1, expand = false} or gui.Nil{},
 		},
-		gui.VBox(rows),
+		-- Only show scrollbar if there are over 10 entries
+		scroll and gui.ScrollableVBox(rows) or gui.VBox(rows),
 	}
 
+	local my_stats
 	if player_stat_in_list then
-		vbox[#vbox + 1] = gui.HBox{
+		my_stats = gui.HBox{
 			spacing = 0,
-			gui.Label{label = S("Your Rank:"), w = rank_w},
-			gui.Spacer{w = rank_right_margin, expand = false},
-			gui.Label{label = S("Your Name:"), expand = true, align_h = "left"},
-			gui.Label{label = S("Your Stats:"), w = value_w},
+			gui.VBox{
+				spacing = 0.1, expand = true,
+				gui.HBox{
+					spacing = 0,
+					gui.Label{label = S("Your Rank:"), w = rank_w},
+					gui.Spacer{w = rank_right_margin, expand = false},
+					gui.Label{label = S("Your Name:"), expand = true, align_h = "left"},
+					gui.Label{label = S("Your Stats:"), w = value_w},
+				},
+				generate_row(player_rank, "#434c5e", stats_name, player_stat_in_list),
+			},
+
+			-- Keep this box aligned with the above one if the scrollbar exists
+			scroll and gui.Spacer{w = 1.1, expand = false} or gui.Nil{},
 		}
-		vbox[#vbox + 1] = generate_row(player_rank, "#434c5e", stats_name, player_stat_in_list)
 	end
 
-	return gui.VBox(vbox)
+	return stats_list, my_stats
 end
 
 local base_tabs = {
@@ -132,6 +149,7 @@ atl_server_statistics.gui = flow.make_gui(function(player, ctx)
 			}
 		},
 
+		-- Must be last (returns 2 values)
 		generate_stats_table(stats_list[ctx.form.tabs] or stats_list[1], player:get_player_name()),
 	}
 end)
