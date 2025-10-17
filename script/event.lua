@@ -63,17 +63,3 @@ end
 minetest.register_on_joinplayer(atl_server_statistics.on_player_join)
 minetest.register_on_leaveplayer(atl_server_statistics.on_player_leave)
 minetest.register_on_shutdown(atl_server_statistics.on_shutdown)
-
-minetest.register_on_player_receive_fields(function(player, _, fields)
-	if fields.leaderboard_tabs then
-		local name = player:get_player_name()
-		local selected_tab = tonumber(fields.leaderboard_tabs)
-		local stats_list = atl_server_statistics.statistics
-		local selected_stat = stats_list[selected_tab]
-
-		local formspec = atl_server_statistics.create_base_formspec(selected_tab, player)
-		formspec = formspec .. atl_server_statistics.generate_stats_table(selected_stat, name)
-
-		minetest.show_formspec(name, "leaderboard:form", formspec)
-	end
-end)

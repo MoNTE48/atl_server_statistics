@@ -12,15 +12,6 @@ atl_server_statistics = {
 	reset_requests = {},
 }
 
-function atl_server_statistics.load_file(path)
-	local status, err = pcall(dofile, path)
-	if not status then
-		minetest.log("error", "-!- Failed to load file: " .. path .. " - Error: " .. err)
-	else
-		minetest.log("action", "-!- Successfully loaded file: " .. path)
-	end
-end
-
 local modpath = minetest.get_modpath("atl_server_statistics")
 
 local files_to_load = {
@@ -28,9 +19,9 @@ local files_to_load = {
 	"script/event.lua",
 	"script/command.lua",
 	"script/util.lua",
-	"script/formspec.lua",
+	"script/gui.lua",
 }
 
 for _, file in ipairs(files_to_load) do
-	atl_server_statistics.load_file(modpath .. "/" .. file)
+	dofile(modpath .. "/" .. file)
 end
