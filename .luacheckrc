@@ -5,6 +5,8 @@ globals = {
 }
 
 read_globals = {
+	"custom_gui",
+	"flow",
 	"inv_themes",
 	"minetest",
 	"utf8",

@@ -53,7 +53,6 @@ local function generate_stats_table(stats_name, player_name)
 		return a.value > b.value
 	end)
 
-	local result_lines = ""
 	local player_rank = nil
 	local player_stat_in_list = nil
 

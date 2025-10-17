@@ -49,7 +49,6 @@ minetest.register_chatcommand("reset", {
 minetest.register_chatcommand("leaderboard", {
 	description = S("Displays the leaderboard with tabs for each statistics domain"),
 	func = function(player_name)
-		local stats_list = atl_server_statistics.statistics
 		local player = minetest.get_player_by_name(player_name)
 		if atl_server_statistics.is_player_online(player_name) then
 			atl_server_statistics.update_playtime_on_stats(player_name)
