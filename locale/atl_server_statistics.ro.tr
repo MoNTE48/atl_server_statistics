@@ -1,9 +1,9 @@
 # textdomain: atl_server_statistics
--!- No statistics available for @1.=-!- Nu există statistici disponibile pentru @1.
--!- Statistics of @1:=-!- Statistici ale @1:
--!- Your statistics have been reset.=-!- Statisticile dvs. au fost resetate.
--!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- Pentru a confirma resetarea statisticilor dvs., tastați /reset din nou în următoarele @1 secunde.
--!- Statistics reset request has expired. Please try again.=-!- Cererea de resetare a statisticilor a expirat. Vă rugăm să încercați din nou.
+No statistics available for @1.=Nu există statistici disponibile pentru @1.
+Statistics of @1:=Statistici ale @1:
+Your statistics have been reset.=Statisticile dvs. au fost resetate.
+To confirm the reset of your statistics, type /reset again within the next @1 seconds.=Pentru a confirma resetarea statisticilor dvs., tastați /reset din nou în următoarele @1 secunde.
+Statistics reset request has expired. Please try again.=Cererea de resetare a statisticilor a expirat. Vă rugăm să încercați din nou.
 
 Messages=Mesaje
 Deaths=Decese

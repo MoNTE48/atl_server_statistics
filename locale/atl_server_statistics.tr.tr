@@ -1,9 +1,9 @@
 # textdomain: atl_server_statistics
--!- No statistics available for @1.=-!- @1 için istatistik mevcut değil.
--!- Statistics of @1:=-!- @1 istatistikleri:
--!- Your statistics have been reset.=-!- İstatistikleriniz sıfırlandı.
--!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- İstatistiklerinizin sıfırlandığını onaylamak için, sonraki @1 saniye içinde tekrar /reset yazın.
--!- Statistics reset request has expired. Please try again.=-!- İstatistik sıfırlama isteğinin süresi doldu. Lütfen tekrar deneyin.
+No statistics available for @1.=@1 için istatistik mevcut değil.
+Statistics of @1:=@1 istatistikleri:
+Your statistics have been reset.=İstatistikleriniz sıfırlandı.
+To confirm the reset of your statistics, type /reset again within the next @1 seconds.=İstatistiklerinizin sıfırlandığını onaylamak için, sonraki @1 saniye içinde tekrar /reset yazın.
+Statistics reset request has expired. Please try again.=İstatistik sıfırlama isteğinin süresi doldu. Lütfen tekrar deneyin.
 
 Messages=Mesajlar
 Deaths=Ölümler

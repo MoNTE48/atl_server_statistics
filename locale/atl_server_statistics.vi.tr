@@ -1,9 +1,9 @@
 # textdomain: atl_server_statistics
--!- No statistics available for @1.=-!- Không có số liệu thống kê cho @1.
--!- Statistics of @1:=-!- Thống kê của @1:
--!- Your statistics have been reset.=-!- Số liệu thống kê của bạn đã được đặt lại.
--!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- Để xác nhận việc đặt lại số liệu thống kê của bạn, hãy nhập lại /reset trong vòng @1 giây tiếp theo.
--!- Statistics reset request has expired. Please try again.=-!- Yêu cầu thiết lập lại thống kê đã hết hạn. Vui lòng thử lại.
+No statistics available for @1.=Không có số liệu thống kê cho @1.
+Statistics of @1:=Thống kê của @1:
+Your statistics have been reset.=Số liệu thống kê của bạn đã được đặt lại.
+To confirm the reset of your statistics, type /reset again within the next @1 seconds.=Để xác nhận việc đặt lại số liệu thống kê của bạn, hãy nhập lại /reset trong vòng @1 giây tiếp theo.
+Statistics reset request has expired. Please try again.=Yêu cầu thiết lập lại thống kê đã hết hạn. Vui lòng thử lại.
 
 Messages=Tin nhắn
 Deaths=Tử vong

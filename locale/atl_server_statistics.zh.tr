@@ -1,9 +1,9 @@
 # textdomain: atl_server_statistics
--!- No statistics available for @1.=-没有 @1 的统计数据。
--!- Statistics of @1:=-@1：
--!- Your statistics have been reset.=-您的统计数据已重置。
--!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-要确认重置统计数据，请在接下来的 @1 秒内再次键入 /reset。
--!- Statistics reset request has expired. Please try again.=-统计重置请求已过期。请重试。
+No statistics available for @1.=-没有 @1 的统计数据。
+Statistics of @1:=-@1：
+Your statistics have been reset.=-您的统计数据已重置。
+To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-要确认重置统计数据，请在接下来的 @1 秒内再次键入 /reset。
+Statistics reset request has expired. Please try again.=-统计重置请求已过期。请重试。
 
 Messages=信息
 Deaths=死亡人数

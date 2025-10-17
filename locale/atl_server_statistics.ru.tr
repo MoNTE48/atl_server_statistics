@@ -1,9 +1,9 @@
 # textdomain: atl_server_statistics
--!- No statistics available for @1.=-!- Нет доступной статистики для @1.
--!- Statistics of @1:=-!- Статистика @1:=
--!- Your statistics have been reset.=-!- Ваши статистические данные были сброшены.
--!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- Чтобы подтвердить сброс ваших статистических данных, введите /reset снова в течение следующих @1 секунд.
--!- Statistics reset request has expired. Please try again.=-!- Срок запроса на сброс статистики истек. Повторите попытку.
+No statistics available for @1.=Нет доступной статистики для @1.
+Statistics of @1:=Статистика @1:=
+Your statistics have been reset.=Ваши статистические данные были сброшены.
+To confirm the reset of your statistics, type /reset again within the next @1 seconds.=Чтобы подтвердить сброс ваших статистических данных, введите /reset снова в течение следующих @1 секунд.
+Statistics reset request has expired. Please try again.=Срок запроса на сброс статистики истек. Повторите попытку.
 
 Messages=Сообщения
 Deaths=Смерти

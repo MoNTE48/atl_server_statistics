@@ -1,9 +1,9 @@
 # textdomain: atl_server_statistics
--!- No statistics available for @1.=-!- Δεν υπάρχουν διαθέσιμα στατιστικά στοιχεία για το @1.
--!- Statistics of @1:=-!- Στατιστικά στοιχεία του @1:
--!- Your statistics have been reset.=-!- Τα στατιστικά σας έχουν μηδενιστεί.
--!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- Για να επιβεβαιώσετε την επαναφορά των στατιστικών σας, πληκτρολογήστε ξανά /reset μέσα στα επόμενα @1 δευτερόλεπτα.
--!- Statistics reset request has expired. Please try again.=-!- Η αίτηση επαναφοράς στατιστικών έχει λήξει. Παρακαλώ προσπαθήστε ξανά.
+No statistics available for @1.=Δεν υπάρχουν διαθέσιμα στατιστικά στοιχεία για το @1.
+Statistics of @1:=Στατιστικά στοιχεία του @1:
+Your statistics have been reset.=Τα στατιστικά σας έχουν μηδενιστεί.
+To confirm the reset of your statistics, type /reset again within the next @1 seconds.=Για να επιβεβαιώσετε την επαναφορά των στατιστικών σας, πληκτρολογήστε ξανά /reset μέσα στα επόμενα @1 δευτερόλεπτα.
+Statistics reset request has expired. Please try again.=Η αίτηση επαναφοράς στατιστικών έχει λήξει. Παρακαλώ προσπαθήστε ξανά.
 
 Messages=Μηνύματα
 Deaths=Θάνατοι

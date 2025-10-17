@@ -1,9 +1,9 @@
 # textdomain: atl_server_statistics
--!- No statistics available for @1.=-!- Pro @1 nejsou k dispozici žádné statistiky.
--!- Statistics of @1:=-!- Statistiky @1:
--!- Your statistics have been reset.=-!- Vaše statistiky byly resetovány.
--!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- Chcete-li potvrdit resetování statistik, zadejte během následujících @1 sekund znovu příkaz /reset.
--!- Statistics reset request has expired. Please try again.=-!- Vypršel požadavek na obnovení statistik. Zkuste to prosím znovu.
+No statistics available for @1.=Pro @1 nejsou k dispozici žádné statistiky.
+Statistics of @1:=Statistiky @1:
+Your statistics have been reset.=Vaše statistiky byly resetovány.
+To confirm the reset of your statistics, type /reset again within the next @1 seconds.=Chcete-li potvrdit resetování statistik, zadejte během následujících @1 sekund znovu příkaz /reset.
+Statistics reset request has expired. Please try again.=Vypršel požadavek na obnovení statistik. Zkuste to prosím znovu.
 
 Messages=Zprávy
 Deaths=Úmrtí

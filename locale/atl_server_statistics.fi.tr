@@ -1,9 +1,9 @@
 # textdomain: atl_server_statistics
--!- No statistics available for @1.=-!- Tilastotietoja ei ole saatavilla tuotteelle @1.
--!- Statistics of @1:=-!- Tilastot @1:
--!- Your statistics have been reset.=-!- Tilastosi on nollattu.
--!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- Vahvistaaksesi tilastojen nollauksen, kirjoita /reset uudelleen seuraavan @1 sekunnin kuluessa.
--!- Statistics reset request has expired. Please try again.=-!- Tilastojen nollauspyyntö on vanhentunut. Yritä uudelleen.
+No statistics available for @1.=Tilastotietoja ei ole saatavilla tuotteelle @1.
+Statistics of @1:=Tilastot @1:
+Your statistics have been reset.=Tilastosi on nollattu.
+To confirm the reset of your statistics, type /reset again within the next @1 seconds.=Vahvistaaksesi tilastojen nollauksen, kirjoita /reset uudelleen seuraavan @1 sekunnin kuluessa.
+Statistics reset request has expired. Please try again.=Tilastojen nollauspyyntö on vanhentunut. Yritä uudelleen.
 
 Messages=Viestit
 Deaths=Kuolemantapaukset

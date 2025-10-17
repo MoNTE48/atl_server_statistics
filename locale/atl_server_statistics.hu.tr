@@ -1,9 +1,9 @@
 # textdomain: atl_server_statistics
--!- No statistics available for @1.=-!- A következőre vonatkozóan nem áll rendelkezésre statisztika: @1.
--!- Statistics of @1:=-!- A @1 statisztikái:
--!- Your statistics have been reset.=-!- A statisztikái visszaálltak.
--!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- A statisztikák visszaállításának megerősítéséhez írja be újra a /reset parancsot a következő @1 másodpercen belül.
--!- Statistics reset request has expired. Please try again.=-!- A statisztikák visszaállítása iránti kérelem lejárt. Kérjük, próbálja újra.
+No statistics available for @1.=A következőre vonatkozóan nem áll rendelkezésre statisztika: @1.
+Statistics of @1:=A @1 statisztikái:
+Your statistics have been reset.=A statisztikái visszaálltak.
+To confirm the reset of your statistics, type /reset again within the next @1 seconds.=A statisztikák visszaállításának megerősítéséhez írja be újra a /reset parancsot a következő @1 másodpercen belül.
+Statistics reset request has expired. Please try again.=A statisztikák visszaállítása iránti kérelem lejárt. Kérjük, próbálja újra.
 
 Messages=Üzenetek
 Deaths=Halálesetek

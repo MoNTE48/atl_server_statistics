@@ -1,9 +1,9 @@
 # textdomain: atl_server_statistics
--!- No statistics available for @1.=-Ingen statistik tilgængelig for @1.
--!- Statistics of @1:=-Statistik over @1:
--!- Your statistics have been reset.=-!- Dine statistikker er blevet nulstillet.
--!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- For at bekræfte nulstillingen af dine statistikker skal du skrive /reset igen inden for de næste @1 sekunder.
--!- Statistics reset request has expired. Please try again.=-Anmodning om nulstilling af statistik er udløbet. Prøv venligst igen.
+No statistics available for @1.=-Ingen statistik tilgængelig for @1.
+Statistics of @1:=-Statistik over @1:
+Your statistics have been reset.=Dine statistikker er blevet nulstillet.
+To confirm the reset of your statistics, type /reset again within the next @1 seconds.=For at bekræfte nulstillingen af dine statistikker skal du skrive /reset igen inden for de næste @1 sekunder.
+Statistics reset request has expired. Please try again.=-Anmodning om nulstilling af statistik er udløbet. Prøv venligst igen.
 
 Messages=Beskeder
 Deaths=Dødsfald

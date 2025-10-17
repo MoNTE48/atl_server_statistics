@@ -1,9 +1,9 @@
 # textdomain: atl_server_statistics
--!- No statistics available for @1.=-!- Няма налични статистически данни за @1.
--!- Statistics of @1:=-!- Статистика на @1:
--!- Your statistics have been reset.=-!- Статистиката ви е нулирана.
--!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- За да потвърдите нулирането на статистиката си, въведете отново /reset в рамките на следващите @1 секунди.
--!- Statistics reset request has expired. Please try again.=-!- Заявката за нулиране на статистиката е изтекла. Моля, опитайте отново.
+No statistics available for @1.=Няма налични статистически данни за @1.
+Statistics of @1:=Статистика на @1:
+Your statistics have been reset.=Статистиката ви е нулирана.
+To confirm the reset of your statistics, type /reset again within the next @1 seconds.=За да потвърдите нулирането на статистиката си, въведете отново /reset в рамките на следващите @1 секунди.
+Statistics reset request has expired. Please try again.=Заявката за нулиране на статистиката е изтекла. Моля, опитайте отново.
 
 Messages=Съобщения
 Deaths=Смъртни случаи

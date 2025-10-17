@@ -1,9 +1,9 @@
 # textdomain: atl_server_statistics
--!- No statistics available for @1.=-!- Немає статистики для @1.
--!- Statistics of @1:=-!- Статистика @1:
--!- Your statistics have been reset.=-!- Ваша статистика була скинута.
--!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-!- Щоб підтвердити скидання статистики, введіть /reset знову протягом наступних @1 секунд.
--!- Statistics reset request has expired. Please try again.=-!- Запит на скидання статистики застарів. Будь ласка, спробуйте ще раз.
+No statistics available for @1.=Немає статистики для @1.
+Statistics of @1:=Статистика @1:
+Your statistics have been reset.=Ваша статистика була скинута.
+To confirm the reset of your statistics, type /reset again within the next @1 seconds.=Щоб підтвердити скидання статистики, введіть /reset знову протягом наступних @1 секунд.
+Statistics reset request has expired. Please try again.=Запит на скидання статистики застарів. Будь ласка, спробуйте ще раз.
 
 Messages=Повідомлення
 Deaths=Смерті

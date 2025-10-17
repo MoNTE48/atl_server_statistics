@@ -1,9 +1,9 @@
 # textdomain: atl_server_statistics
--!- No statistics available for @1.=-!- Aucune statistique n'est disponible pour @1.
--!- Statistics of @1:=-!- Statistiques de @1 :
--!- Your statistics have been reset.=-!- Vos statistiques ont été réinitialisées.
--!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-Pour confirmer la réinitialisation de vos statistiques, tapez à nouveau /reset dans les @1 secondes qui suivent.
--!- Statistics reset request has expired. Please try again.=-!- La demande de réinitialisation des statistiques a expiré. Veuillez réessayer.
+No statistics available for @1.=Aucune statistique n'est disponible pour @1.
+Statistics of @1:=Statistiques de @1 :
+Your statistics have been reset.=Vos statistiques ont été réinitialisées.
+To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-Pour confirmer la réinitialisation de vos statistiques, tapez à nouveau /reset dans les @1 secondes qui suivent.
+Statistics reset request has expired. Please try again.=La demande de réinitialisation des statistiques a expiré. Veuillez réessayer.
 
 Messages=Messages
 Deaths=Décès

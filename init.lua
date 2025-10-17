@@ -9,7 +9,6 @@ atl_server_statistics = {
 	color_message = "",
 	reset_color_message = "#bce712",
 	time_before_end_request = 30,
-	reset_requests = {},
 }
 
 local modpath = minetest.get_modpath("atl_server_statistics")

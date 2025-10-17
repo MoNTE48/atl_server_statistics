@@ -1,9 +1,9 @@
 # textdomain: atl_server_statistics
--!- No statistics available for @1.=-Geen statistieken beschikbaar voor @1.
--!- Statistics of @1:=-Statistieken van @1:
--!- Your statistics have been reset.=-Je statistieken zijn gereset.
--!- To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-Om het resetten van je statistieken te bevestigen, typ je binnen de volgende @1 seconden opnieuw /reset.
--!- Statistics reset request has expired. Please try again.=-Statistieken resetten aanvraag is verlopen. Probeer het opnieuw.
+No statistics available for @1.=-Geen statistieken beschikbaar voor @1.
+Statistics of @1:=-Statistieken van @1:
+Your statistics have been reset.=-Je statistieken zijn gereset.
+To confirm the reset of your statistics, type /reset again within the next @1 seconds.=-Om het resetten van je statistieken te bevestigen, typ je binnen de volgende @1 seconden opnieuw /reset.
+Statistics reset request has expired. Please try again.=-Statistieken resetten aanvraag is verlopen. Probeer het opnieuw.
 
 Messages=Berichten
 Deaths=Overlijdens
