@@ -24,6 +24,13 @@ function atl_server_statistics.reset_player_stats(player_name)
 	atl_server_statistics.mod_storage:set_int(player_name .. "_connect_time", os.time())
 end
 
+function atl_server_statistics.reset_single_stat(player_name, stat)
+	atl_server_statistics.mod_storage:set_int(player_name .. "_" .. stat, 0)
+	if stat == "PlayTime" then
+		atl_server_statistics.mod_storage:set_int(player_name .. "_connect_time", os.time())
+	end
+end
+
 function atl_server_statistics.format_playtime(seconds)
 	return string.format("%02d:%02d:%02d", math.floor(seconds / 3600), math.floor((seconds % 3600) / 60), seconds % 60)
 end
