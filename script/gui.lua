@@ -129,23 +129,25 @@ local stats_list = atl_server_statistics.statistics
 atl_server_statistics.gui = flow.make_gui(function(player, ctx)
 	local theme = custom_gui.tab_menu.get_theme(player)
 
-	return gui.VBox{
+	return gui.Window{
 		min_w = 11.15, min_h = 10.4,
 
-		gui.HBox{
-			gui.Tabheader{
-				w = 5, h = 0.8,
-				expand = true, align_h = "fill",
-				name = "tabs",
-				captions = base_tabs,
-			},
-
-			gui.ImageButtonExit{
+		-- HACK
+		gui.Container{
+			w = 0, h = 0, align_h = "end",
+			{
+				type = "image_button_exit", x = 0.5, y = -0.3,
 				w = 0.7, h = 0.7, name = "exit", align_v = "top",
 				texture_name = theme:texture("close"),
 				pressed_texture_name = theme:texture("close_pressed"),
-				drawborder = false,
-			}
+				drawborder = false, noclip = true,
+			},
+		},
+
+		gui.Tabheader{
+			w = 5, h = 0.8, align_h = "fill",
+			name = "tabs",
+			captions = base_tabs,
 		},
 
 		-- Must be last (returns 2 values)
