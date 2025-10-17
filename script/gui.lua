@@ -99,9 +99,9 @@ local function generate_stats_table(stats_name, player_name)
 				gui.HBox{
 					spacing = 0,
 					gui.Label{label = S("Your Rank:"), w = rank_w},
-					gui.Spacer{w = rank_right_margin, expand = false},
-					gui.Label{label = S("Your Name:"), expand = true, align_h = "left"},
-					gui.Label{label = S("Your Stats:"), w = value_w},
+				--	gui.Spacer{w = rank_right_margin, expand = false},
+				--	gui.Label{label = S("Your Name:"), expand = true, align_h = "left"},
+				--	gui.Label{label = S("Your Stats:"), w = value_w},
 				},
 				generate_row(player_rank, "#434c5e", stats_name, player_stat_in_list),
 			},
