@@ -10,6 +10,7 @@ read_globals = {
 	"inv_themes",
 	"minetest",
 	"utf8",
+	"workbench",
 	string = {fields = {"buffer", "split", "trim"}},
 	table = {fields = {"copy", "indexof"}},
 }
