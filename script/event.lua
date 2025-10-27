@@ -18,6 +18,12 @@ register_event("Items Crafted", function()
 	minetest.register_on_craft(function(itemstack, player)
 		atl_server_statistics.increment_event_stat(atl_server_statistics.get_player_name(player), "Items Crafted", itemstack:get_count())
 	end)
+
+	if minetest.global_exists("workbench") and workbench.register_on_craft_all then
+		workbench.register_on_craft_all(function(player, _, count)
+			atl_server_statistics.increment_event_stat(player:get_player_name(), "Items Crafted", count)
+		end)
+	end
 end, "register_on_craft", false)
 
 register_event("Nodes Placed", function()
