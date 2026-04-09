@@ -47,14 +47,17 @@ register_event("Messages Count", function()
 	end)
 end, "register_on_chat_message", false)
 
+-- I don't think this is useful, since get_int() returns 0 by default and we
+-- probably don't want to show players with zero values on the leaderboard at all
+--[[
 function atl_server_statistics.on_player_join(player)
 	local player_name = atl_server_statistics.get_player_name(player)
-	atl_server_statistics.mod_storage:set_int(player_name .. "_connect_time", os.time())
 	for _, stat in ipairs(atl_server_statistics.statistics) do
 		local key = player_name .. "_" .. stat
 		atl_server_statistics.mod_storage:set_int(key, atl_server_statistics.mod_storage:get_int(key) or 0)
 	end
 end
+]]
 
 function atl_server_statistics.on_player_leave(player)
 	atl_server_statistics.update_playtime_on_stats(atl_server_statistics.get_player_name(player))
@@ -66,6 +69,6 @@ function atl_server_statistics.on_shutdown()
 	end
 end
 
-minetest.register_on_joinplayer(atl_server_statistics.on_player_join)
+-- minetest.register_on_joinplayer(atl_server_statistics.on_player_join)
 minetest.register_on_leaveplayer(atl_server_statistics.on_player_leave)
 minetest.register_on_shutdown(atl_server_statistics.on_shutdown)

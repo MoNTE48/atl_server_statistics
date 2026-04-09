@@ -11,6 +11,7 @@ read_globals = {
 	"minetest",
 	"utf8",
 	"workbench",
+	"xban",
 	string = {fields = {"buffer", "split", "trim"}},
 	table = {fields = {"copy", "indexof"}},
 }

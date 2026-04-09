@@ -1,5 +1,6 @@
 local S = atl_server_statistics.S
 local gui = custom_gui.tab_menu.widgets
+local is_banned = atl_server_statistics._is_banned
 
 local rank_w = 0.7
 local rank_right_margin = 1.5
@@ -44,8 +45,10 @@ local function generate_stats_table(stats_name, player_name)
 	for key, _ in pairs(all_keys) do
 		if key:sub(-#suffix) == suffix then
 			local name = key:sub(1, -#suffix - 1)
-			local stat_value = mod_storage:get_int(key)
-			table.insert(players_stats, {name = name, value = stat_value})
+			if not is_banned(name) then
+				local stat_value = mod_storage:get_int(key)
+				table.insert(players_stats, {name = name, value = stat_value})
+			end
 		end
 	end
 

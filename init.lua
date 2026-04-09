@@ -24,3 +24,14 @@ local files_to_load = {
 for _, file in ipairs(files_to_load) do
 	dofile(modpath .. "/" .. file)
 end
+
+-- Remove the old "connect_time" field
+local mod_storage = atl_server_statistics.mod_storage
+if mod_storage:get_int("removed_connect_time") == 0 then
+	for field in pairs(mod_storage:to_table().fields) do
+		if field:sub(-13) == "_connect_time" then
+			mod_storage:set_string(field, "")
+		end
+	end
+	mod_storage:set_int("removed_connect_time", 1)
+end
