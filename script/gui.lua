@@ -1,6 +1,6 @@
 local S = atl_server_statistics.S
 local gui = custom_gui.tab_menu.widgets
-local is_banned = atl_server_statistics._is_banned
+local have_xban = minetest.global_exists("xban")
 
 local rank_w = 0.7
 local rank_right_margin = 1.5
@@ -36,16 +36,33 @@ local function generate_row(rank, row_color, stats_name, player_stat)
 	}
 end
 
+-- Build a table of banned players to prevent O(n²) behaviour when getting a
+-- list of players for ranking
+local function build_banned_table()
+	local banned = {}
+	if have_xban then
+		for _, entry in ipairs(xban.db) do
+			if entry.banned then
+				for name in pairs(entry.names) do
+					banned[name] = true
+				end
+			end
+		end
+	end
+	return banned
+end
+
 local function generate_stats_table(stats_name, player_name)
 	local players_stats = {}
 	local mod_storage = atl_server_statistics.mod_storage
 	local all_keys = mod_storage:to_table().fields
 
 	local suffix = "_" .. stats_name
+	local banned = build_banned_table()
 	for key, _ in pairs(all_keys) do
 		if key:sub(-#suffix) == suffix then
 			local name = key:sub(1, -#suffix - 1)
-			if not is_banned(name) then
+			if not banned[name] then
 				local stat_value = mod_storage:get_int(key)
 				table.insert(players_stats, {name = name, value = stat_value})
 			end

@@ -16,7 +16,6 @@ local function is_banned(player_name)
 		return e and e.banned
 	end
 end
-atl_server_statistics._is_banned = is_banned
 
 function atl_server_statistics.player_has_stats(player_name)
 	if is_banned(player_name) then
